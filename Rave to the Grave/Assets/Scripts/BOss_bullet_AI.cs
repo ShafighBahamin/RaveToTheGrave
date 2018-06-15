@@ -1,24 +1,23 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bullet_AI : MonoBehaviour {
-
+public class BOss_bullet_AI : MonoBehaviour {
 
     public Vector3 vec;
     private GameObject shooter;
     public bool facing_left;
     public Vector3 shooter_pos;
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start()
+    {
 
     }
-	
-	// Update is called once per frame
-	void Update ()
+
+    // Update is called once per frame
+    void Update()
     {
-        if (facing_left)
+        if (!facing_left)
         {
             shoot_left();
         }
